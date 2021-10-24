@@ -8,7 +8,7 @@ import Members from '../components/Members'
 import firebase from "firebase"
 import "../components/fire"
 import usePersist from '../components/hook/usePersist'
-import PopupExample from '../components/PopupExample'
+import AddCommentButton from '../components/AddCommentButton'
 
 const db = firebase.firestore()
 
@@ -40,8 +40,8 @@ export default function Home() {
 
   useEffect(() => {
     if (auth.currentUser != null) {
+      let mydata = []
       db.collection("users").get().then((snapshot) => {
-        let mydata = []
         snapshot.forEach((document) => {
           const doc = document.data()
           mydata.push(doc)
