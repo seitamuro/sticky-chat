@@ -12,8 +12,17 @@ export default function TimeLine() {
         <div className="col-lg-6">
             <div className="container col">
                 <AddCommentButton />
+                {/*<div className="card">
+                    <p>とりあえず動くのができた!</p>
+                </div>
                 <div className="card">
-                    <p>This is card.</p>
+                    <p>イテレータを使えばもっときれいに書けそう</p>
+    </div>*/}
+                <div className="card">
+                    <p>必要なモジュールを書き足しておきました｡</p>
+    </div>
+                <div className="card">
+                    <p>重くなるのでimgフォルダを.gitignoreに追加しました</p>
                 </div>
             </div>
         </div>
